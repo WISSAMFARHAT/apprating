@@ -1,0 +1,26 @@
+<bar-rating [rate]="ratestar" [max]="5"[readOnly]="true" >
+    <ng-template ratingInactive>
+      <fa-icon
+        [icon]="['fas', 'star']"
+        [fixedWidth]="true"
+        size="lg"
+        style="color: #d2d2d2"
+      ></fa-icon>
+    </ng-template>
+    <ng-template ratingActive>
+      <fa-icon
+        [icon]="['fas', 'star']"
+        [fixedWidth]="true"
+        size="lg"
+        style="color: #50e3c2"
+      ></fa-icon>
+    </ng-template>
+    <ng-template ratingFraction>
+        <fa-icon
+          [icon]="['fas', 'star-half-alt']"
+          [fixedWidth]="true"
+          size="lg"faCircleLeft
+          style="color: #50e3c2"
+        ></fa-icon>
+      </ng-template>
+  </bar-rating>

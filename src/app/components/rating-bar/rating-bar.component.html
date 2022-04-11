@@ -1,0 +1,19 @@
+<bar-rating [rate]="rate" [max]="5">
+    <ng-template ratingInactive>
+      <fa-icon
+        [icon]="['fas', 'circle']"
+        [fixedWidth]="true"
+        size="lg"
+        style="color: #d2d2d2"
+      ></fa-icon>
+    </ng-template>
+    <ng-template ratingActive>
+      <fa-icon
+        [icon]="['fas', 'circle']"
+        [fixedWidth]="true"
+        size="lg"
+        style="color: #50e3c2"
+      ></fa-icon>
+    </ng-template>
+   
+  </bar-rating>

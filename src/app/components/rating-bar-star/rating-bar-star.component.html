@@ -1,4 +1,4 @@
-<bar-rating [rate]="ratestar" [max]="5"[readOnly]="true" >
+<bar-rating [rate]="ratestar" [max]="5" [readOnly]="editable" (rateChange)="ratingChanged($event)">
     <ng-template ratingInactive>
       <fa-icon
         [icon]="['fas', 'star']"
@@ -12,15 +12,9 @@
         [icon]="['fas', 'star']"
         [fixedWidth]="true"
         size="lg"
-        style="color: #50e3c2"
+        [ngClass]="{'color_red': ratestar<3, 'color_yellow' : ratestar>=3, 'color_green' :ratestar===5}"
+
       ></fa-icon>
     </ng-template>
-    <ng-template ratingFraction>
-        <fa-icon
-          [icon]="['fas', 'star-half-alt']"
-          [fixedWidth]="true"
-          size="lg"faCircleLeft
-          style="color: #50e3c2"
-        ></fa-icon>
-      </ng-template>
+ 
   </bar-rating>

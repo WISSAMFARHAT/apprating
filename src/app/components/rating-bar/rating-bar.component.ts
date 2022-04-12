@@ -10,6 +10,7 @@ export class RatingBarComponent implements OnInit {
 
   @Input() readOnly =true;
   @Input() rate: number =2 ;
+  @Input() editable:boolean=true;
   @Output() ratingChange = new EventEmitter<number>();
 
    max=5;
@@ -17,8 +18,9 @@ export class RatingBarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  ratingChanged($event: RatingChangeEvent) {
-    this.ratingChange.emit($event.rating);
+  ratingChanged($event: number) {
+    this.ratingChange.emit($event);
+    this.rate=$event;
   }
 
 }

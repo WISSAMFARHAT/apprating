@@ -4,3 +4,18 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.color_red
+{
+    color: red;
+}
+
+.color_yellow
+{
+    color: yellow;
+}
+
+.color_green
+{
+    color: green;
+}

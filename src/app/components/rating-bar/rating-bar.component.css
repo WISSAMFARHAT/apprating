@@ -7,13 +7,20 @@
     font-family: Lato;
   }
   
-  .star {
-    --br-font-size: 34px;
-    --br-active-color: #ed7b67;
-    --br-inactive-color: #d2d2d2;
-  }
+ 
   
-  .bar {
-    --br-active-color: #17c9c9;
-  }
-  
+
+  .color_red
+{
+    color: red;
+}
+
+.color_yellow
+{
+    color: yellow;
+}
+
+.color_green
+{
+    color: green;
+}
